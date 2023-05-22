@@ -10,9 +10,13 @@
 		006A44932A1796A70087C712 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 006A44922A1796A70087C712 /* AppDelegate.swift */; };
 		006A44952A1796A70087C712 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 006A44942A1796A70087C712 /* SceneDelegate.swift */; };
 		006A44972A1796A70087C712 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 006A44962A1796A70087C712 /* ViewController.swift */; };
-		006A449A2A1796A70087C712 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 006A44982A1796A70087C712 /* Main.storyboard */; };
 		006A449C2A1796A90087C712 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 006A449B2A1796A90087C712 /* Assets.xcassets */; };
 		006A449F2A1796A90087C712 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 006A449D2A1796A90087C712 /* LaunchScreen.storyboard */; };
+		006A44AA2A1798C60087C712 /* OpenAIApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 006A44A92A1798C60087C712 /* OpenAIApi.swift */; };
+		008461A32A179F11003A2AB8 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 008461A22A179F11003A2AB8 /* SnapKit */; };
+		00988CF82A190642004EDDD7 /* OpenAI in Frameworks */ = {isa = PBXBuildFile; productRef = 00988CF72A190642004EDDD7 /* OpenAI */; };
+		00988CFA2A1A432C004EDDD7 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00988CF92A1A432B004EDDD7 /* TableViewCell.swift */; };
+		00988CFC2A1A62D4004EDDD7 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00988CFB2A1A62D4004EDDD7 /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,10 +24,12 @@
 		006A44922A1796A70087C712 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		006A44942A1796A70087C712 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		006A44962A1796A70087C712 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		006A44992A1796A70087C712 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		006A449B2A1796A90087C712 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		006A449E2A1796A90087C712 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		006A44A02A1796A90087C712 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		006A44A92A1798C60087C712 /* OpenAIApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenAIApi.swift; sourceTree = "<group>"; };
+		00988CF92A1A432B004EDDD7 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		00988CFB2A1A62D4004EDDD7 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +37,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00988CF82A190642004EDDD7 /* OpenAI in Frameworks */,
+				008461A32A179F11003A2AB8 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,10 +67,12 @@
 				006A44922A1796A70087C712 /* AppDelegate.swift */,
 				006A44942A1796A70087C712 /* SceneDelegate.swift */,
 				006A44962A1796A70087C712 /* ViewController.swift */,
-				006A44982A1796A70087C712 /* Main.storyboard */,
 				006A449B2A1796A90087C712 /* Assets.xcassets */,
 				006A449D2A1796A90087C712 /* LaunchScreen.storyboard */,
 				006A44A02A1796A90087C712 /* Info.plist */,
+				006A44A92A1798C60087C712 /* OpenAIApi.swift */,
+				00988CF92A1A432B004EDDD7 /* TableViewCell.swift */,
+				00988CFB2A1A62D4004EDDD7 /* Extensions.swift */,
 			);
 			path = AICase;
 			sourceTree = "<group>";
@@ -83,6 +93,10 @@
 			dependencies = (
 			);
 			name = AICase;
+			packageProductDependencies = (
+				008461A22A179F11003A2AB8 /* SnapKit */,
+				00988CF72A190642004EDDD7 /* OpenAI */,
+			);
 			productName = AICase;
 			productReference = 006A448F2A1796A70087C712 /* AICase.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +125,10 @@
 				Base,
 			);
 			mainGroup = 006A44862A1796A70087C712;
+			packageReferences = (
+				008461A12A179F11003A2AB8 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				00988CF62A190642004EDDD7 /* XCRemoteSwiftPackageReference "OpenAI" */,
+			);
 			productRefGroup = 006A44902A1796A70087C712 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -127,7 +145,6 @@
 			files = (
 				006A449F2A1796A90087C712 /* LaunchScreen.storyboard in Resources */,
 				006A449C2A1796A90087C712 /* Assets.xcassets in Resources */,
-				006A449A2A1796A70087C712 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,23 +155,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00988CFA2A1A432C004EDDD7 /* TableViewCell.swift in Sources */,
+				00988CFC2A1A62D4004EDDD7 /* Extensions.swift in Sources */,
 				006A44972A1796A70087C712 /* ViewController.swift in Sources */,
 				006A44932A1796A70087C712 /* AppDelegate.swift in Sources */,
 				006A44952A1796A70087C712 /* SceneDelegate.swift in Sources */,
+				006A44AA2A1798C60087C712 /* OpenAIApi.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		006A44982A1796A70087C712 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				006A44992A1796A70087C712 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		006A449D2A1796A90087C712 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -292,7 +304,7 @@
 				INFOPLIST_FILE = AICase/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -320,7 +332,7 @@
 				INFOPLIST_FILE = AICase/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -358,6 +370,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		008461A12A179F11003A2AB8 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		00988CF62A190642004EDDD7 /* XCRemoteSwiftPackageReference "OpenAI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/MacPaw/OpenAI.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.2.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		008461A22A179F11003A2AB8 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 008461A12A179F11003A2AB8 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		00988CF72A190642004EDDD7 /* OpenAI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 00988CF62A190642004EDDD7 /* XCRemoteSwiftPackageReference "OpenAI" */;
+			productName = OpenAI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 006A44872A1796A70087C712 /* Project object */;
 }
