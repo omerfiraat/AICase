@@ -13,6 +13,9 @@
 		006A449C2A1796A90087C712 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 006A449B2A1796A90087C712 /* Assets.xcassets */; };
 		006A449F2A1796A90087C712 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 006A449D2A1796A90087C712 /* LaunchScreen.storyboard */; };
 		006A44AA2A1798C60087C712 /* OpenAIApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 006A44A92A1798C60087C712 /* OpenAIApi.swift */; };
+		007A696D2A1BE019005A9A83 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 007A696C2A1BE019005A9A83 /* Lottie */; };
+		007A696F2A1BE035005A9A83 /* vinylAnimation.json in Resources */ = {isa = PBXBuildFile; fileRef = 007A696E2A1BE035005A9A83 /* vinylAnimation.json */; };
+		007A69712A1BE0E6005A9A83 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007A69702A1BE0E6005A9A83 /* SplashViewController.swift */; };
 		008461A32A179F11003A2AB8 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 008461A22A179F11003A2AB8 /* SnapKit */; };
 		00988CF82A190642004EDDD7 /* OpenAI in Frameworks */ = {isa = PBXBuildFile; productRef = 00988CF72A190642004EDDD7 /* OpenAI */; };
 		00988CFA2A1A432C004EDDD7 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00988CF92A1A432B004EDDD7 /* TableViewCell.swift */; };
@@ -28,6 +31,8 @@
 		006A449E2A1796A90087C712 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		006A44A02A1796A90087C712 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		006A44A92A1798C60087C712 /* OpenAIApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenAIApi.swift; sourceTree = "<group>"; };
+		007A696E2A1BE035005A9A83 /* vinylAnimation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = vinylAnimation.json; path = ../../../Downloads/vinylAnimation.json; sourceTree = "<group>"; };
+		007A69702A1BE0E6005A9A83 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
 		00988CF92A1A432B004EDDD7 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		00988CFB2A1A62D4004EDDD7 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -39,6 +44,7 @@
 			files = (
 				00988CF82A190642004EDDD7 /* OpenAI in Frameworks */,
 				008461A32A179F11003A2AB8 /* SnapKit in Frameworks */,
+				007A696D2A1BE019005A9A83 /* Lottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +71,7 @@
 			isa = PBXGroup;
 			children = (
 				006A44922A1796A70087C712 /* AppDelegate.swift */,
+				007A69702A1BE0E6005A9A83 /* SplashViewController.swift */,
 				006A44942A1796A70087C712 /* SceneDelegate.swift */,
 				006A44962A1796A70087C712 /* ViewController.swift */,
 				006A449B2A1796A90087C712 /* Assets.xcassets */,
@@ -73,6 +80,7 @@
 				006A44A92A1798C60087C712 /* OpenAIApi.swift */,
 				00988CF92A1A432B004EDDD7 /* TableViewCell.swift */,
 				00988CFB2A1A62D4004EDDD7 /* Extensions.swift */,
+				007A696E2A1BE035005A9A83 /* vinylAnimation.json */,
 			);
 			path = AICase;
 			sourceTree = "<group>";
@@ -96,6 +104,7 @@
 			packageProductDependencies = (
 				008461A22A179F11003A2AB8 /* SnapKit */,
 				00988CF72A190642004EDDD7 /* OpenAI */,
+				007A696C2A1BE019005A9A83 /* Lottie */,
 			);
 			productName = AICase;
 			productReference = 006A448F2A1796A70087C712 /* AICase.app */;
@@ -128,6 +137,7 @@
 			packageReferences = (
 				008461A12A179F11003A2AB8 /* XCRemoteSwiftPackageReference "SnapKit" */,
 				00988CF62A190642004EDDD7 /* XCRemoteSwiftPackageReference "OpenAI" */,
+				007A696B2A1BE019005A9A83 /* XCRemoteSwiftPackageReference "lottie-ios" */,
 			);
 			productRefGroup = 006A44902A1796A70087C712 /* Products */;
 			projectDirPath = "";
@@ -143,6 +153,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				007A696F2A1BE035005A9A83 /* vinylAnimation.json in Resources */,
 				006A449F2A1796A90087C712 /* LaunchScreen.storyboard in Resources */,
 				006A449C2A1796A90087C712 /* Assets.xcassets in Resources */,
 			);
@@ -160,6 +171,7 @@
 				006A44972A1796A70087C712 /* ViewController.swift in Sources */,
 				006A44932A1796A70087C712 /* AppDelegate.swift in Sources */,
 				006A44952A1796A70087C712 /* SceneDelegate.swift in Sources */,
+				007A69712A1BE0E6005A9A83 /* SplashViewController.swift in Sources */,
 				006A44AA2A1798C60087C712 /* OpenAIApi.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -372,6 +384,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		007A696B2A1BE019005A9A83 /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-ios.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
 		008461A12A179F11003A2AB8 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
@@ -391,6 +411,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		007A696C2A1BE019005A9A83 /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 007A696B2A1BE019005A9A83 /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
+		};
 		008461A22A179F11003A2AB8 /* SnapKit */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 008461A12A179F11003A2AB8 /* XCRemoteSwiftPackageReference "SnapKit" */;

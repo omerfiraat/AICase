@@ -26,7 +26,7 @@ class ChatService {
             "model": model,
             "prompt": prompt,
             "max_tokens": 100,
-            "temperature": 0.4,
+            "temperature": 0.2,
             "n": 1,
             "stop": ".\n",
             "stream": false,
