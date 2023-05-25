@@ -4,13 +4,13 @@ class ChatService {
     let session: URLSession
     let baseURL = "https://api.openai.com"
     let apiVersion = "v1"
-    let apiKey = "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"
+    let apiKey = "YOUR API KEY"
 
     init(session: URLSession = .shared) {
         self.session = session
     }
 
-    func getCompletion(prompt: String, model: String = "davinci:ft-personal:test-02-2023-05-21-11-21-39", completion: @escaping (Result<String, Error>) -> Void) {
+    func getCompletion(prompt: String, model: String = "YOUR FINE TUNED MODEL", completion: @escaping (Result<String, Error>) -> Void) {
         let endpoint = "/completions"
         guard let url = URL(string: baseURL + "/" + apiVersion + endpoint) else {
             print("Invalid URL.")
