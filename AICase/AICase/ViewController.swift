@@ -12,6 +12,7 @@ class ChatViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        hideKeyboardOnTap()
         setupUI()
         addInitialMessage()
         scrollToBottom()
